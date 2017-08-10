@@ -1,0 +1,12 @@
+# Managed by Ansible
+
+[Unit]
+Description=disable transparent huge pages
+After=network.target
+
+[Service]
+Type=oneshot
+ExecStart={{ mongodb_disable_thp_script_path }}/disable-thp.sh start
+
+[Install]
+WantedBy=multi-user.target

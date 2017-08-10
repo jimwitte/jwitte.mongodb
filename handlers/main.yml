@@ -1,0 +1,11 @@
+---
+# handlers for mongodb
+- name: restart mongodb
+  service:
+    name: mongodb
+    state: restarted
+
+- name: run disable thp
+  systemd:
+    name: "disable-thp.service"
+    state: "started"

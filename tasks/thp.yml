@@ -1,0 +1,18 @@
+---
+# tasks for jwitte.mongodb/tasks/thp.yml
+- name: copy disable-thp.sh
+  copy:
+    src: 'disable-thp.sh'
+    dest: "{{ mongodb_disable_thp_script_path }}/disable-thp.sh"
+    mode: 0755
+
+- name: template disable-thp.service
+  template:
+    src: 'disable-thp.service.j2'
+    dest: '/etc/systemd/system/disable-thp.service'
+
+- name: enable thp service
+  systemd:
+    enabled: "yes"
+    name: "disable-thp.service"
+    daemon-reload: "yes"
