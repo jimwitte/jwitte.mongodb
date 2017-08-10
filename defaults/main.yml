@@ -1,5 +1,5 @@
 ---
-# defaults for jwitte.mongodb
+# defaults for jimwitte.mongodb
 mongodb_db_path: "/srv/data/mongodb"
 mongodb_log_path: "/var/log/mongodb/mongod.log"
 mongodb_configure_thp: "true"

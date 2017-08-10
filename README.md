@@ -1,4 +1,4 @@
-jwitte.mongodb
+jimwitte.mongodb
 ==============
 Install mongodb for Ubuntu 16.04. Optionally disable "transparent huge pages".
 
@@ -30,7 +30,7 @@ Example Playbook
 ----------------
     - hosts: servers
       roles:
-         - {role: jwitte.mongodb}
+         - {role: jimwitte.mongodb}
 
 License
 -------

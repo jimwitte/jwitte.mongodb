@@ -1,5 +1,5 @@
 ---
-# tasks for jwitte.mongodb/tasks/thp.yml
+# tasks for jimwitte.mongodb/tasks/thp.yml
 - name: copy disable-thp.sh
   copy:
     src: 'disable-thp.sh'
